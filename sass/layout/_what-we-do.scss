@@ -1,0 +1,40 @@
+/* >>>>>>>>>>>>section-what-we-do<<<<<<<<<<<< */
+.what-we-do {
+  justify-content: center;
+  
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+.img-list{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.img-list .img-item + .img-item{
+  margin-left: 30px;
+}
+.img-item{
+  position: relative;
+}
+.img-text{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  width: 370px;
+  height: 70px;
+  bottom: 0px;
+  color: var(--fourth-text-color);
+  background-color: rgba(47, 48, 58, 0.8);
+  
+}

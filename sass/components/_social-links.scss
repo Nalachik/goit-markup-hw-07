@@ -1,0 +1,41 @@
+/* .........team icons.....[f][t][id][in]*/
+.socials{
+  display: flex;
+  justify-content: center;
+}
+.team-socials .social-item + .social-item{
+  margin-left: 10px;
+}
+.team-socials{
+  margin-bottom: 30px;
+}
+.social-item{
+  width: 44px;
+  height: 44px;
+}
+.social-icon{
+  fill:var(--icons-color);
+}
+
+.social-link{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--fourth-text-color);
+
+  transition-property: background-color;
+  transition-duration:250ms;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+ }
+ 
+.social-link:hover .social-icon,
+.social-link:focus .social-icon{
+  fill: var(--fourth-text-color);
+} 
+.social-link:hover,
+.social-link:focus{
+  background-color: var(--third-text-color);
+}

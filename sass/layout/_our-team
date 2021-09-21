@@ -1,0 +1,50 @@
+/* >>>>>>>>>>>>>>>section-our-team<<<<<<<<<<<<<<<<< */
+/* Team-flex */
+.our-team{
+  background: var(--bg-color-two);
+}
+.team-list{
+  display: flex;
+}
+.team-list .team-item + .team-item{
+  margin-left: 30px;
+}
+
+.team-item{
+  background: var(--fourth-text-color);
+  box-shadow: 
+  0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+}
+.team {
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+.team-name {
+  padding-top: 30px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+.team-duty {
+  padding-top: 10px;
+  padding-bottom: 16px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}
