@@ -1,6 +1,6 @@
 /* >>>>>>>>>>>INDEX<<<<<<<<<<<<< */
 /* hero-section */
-.hero-banner {
+.hero__overlay {
   background-color: var(--bg-color-one);
   padding: 200px;
   max-width: 1600px;
@@ -19,7 +19,7 @@
 }
 
 
-.hero-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1, 36;
@@ -31,7 +31,7 @@
   color: var(--fourth-text-color);
 }
 
-.hero-button {
+.hero__button {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -50,8 +50,8 @@
   transition-duration:250ms;
   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero-button:hover,
-.hero-button:focus{
+.hero__button:hover,
+.hero__button:focus{
   color: var(--fourth-text-color);
   background-color: var(--bg-color-third);
 }
