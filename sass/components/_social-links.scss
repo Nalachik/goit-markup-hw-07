@@ -1,23 +1,24 @@
 /* .........team icons.....[f][t][id][in]*/
-.socials{
+
+.social-item:not(:last-child){
+  margin-right: 10px;
+}
+
+.social{
   display: flex;
   justify-content: center;
-}
-.team-socials .social-item + .social-item{
-  margin-left: 10px;
-}
-.team-socials{
   margin-bottom: 30px;
 }
-.social-item{
+
+.social__item{
   width: 44px;
   height: 44px;
 }
-.social-icon{
+.social__icon{
   fill:var(--icons-color);
 }
 
-.social-link{
+.social__link{
   width: 100%;
   height: 100%;
   display: flex;
@@ -31,11 +32,11 @@
   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
  }
  
-.social-link:hover .social-icon,
-.social-link:focus .social-icon{
+.social__link:hover .social__icon,
+.social__link:focus .social__icon{
   fill: var(--fourth-text-color);
 } 
-.social-link:hover,
-.social-link:focus{
+.social__link:hover,
+.social__link:focus{
   background-color: var(--third-text-color);
 }

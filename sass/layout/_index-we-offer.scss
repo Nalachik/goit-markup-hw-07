@@ -1,9 +1,9 @@
 /* section-two-we-offer */
-.we-offer{
+.offer{
   display: flex;
   /* margin: 94px auto 94px auto; */
 }
-.we-offer-icon-bg{
+.offer__bg{
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
@@ -14,16 +14,16 @@
   align-items: center;
 }
 
-.we-offer .offer-list + .offer-list{
-  margin-left: 30px;
+.offer__list:not(:last-child) {
+  margin-right: 30px;
 }
 
-.offer-list{
+.offer__list{
   width: 270px;
   
 }
 
-.offer-title {
+.offer__title {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -31,7 +31,7 @@
   text-transform: uppercase;
   color: var(--main-text-color);
 }
-.offer-description {
+.offer__description {
   padding-top: 10px;
   
   font-weight: normal;
