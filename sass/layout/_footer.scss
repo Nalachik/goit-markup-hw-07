@@ -19,9 +19,11 @@
   letter-spacing: 0.03em;
   color: var(--third-text-color);
 }
+
 .footer-set__studio {
   color: var(--fourth-text-color);
 }
+
 /* address */
 .footer-set__address {
   display: block;
@@ -61,9 +63,7 @@
   display: flex;
   justify-content: center;
 }
-.footer-join__item:not(:last-child) {
-  margin-right: 10px;
-}
+
 .footer-join__titel{
   margin-bottom: 20px;
   font-weight: bold;
@@ -77,6 +77,9 @@
 .footer-join__item{
   width: 44px;
   height: 44px; 
+  &:not(:last-child) {
+  margin-right: 10px;
+  }
 }
 .footer-join__icon{
   fill: var(--fourth-text-color);
@@ -93,11 +96,12 @@
   transition-property: background-color;
   transition-duration:250ms;
   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-join__link:hover,
-.footer-join__link:focus{
+  &:hover,
+  &:focus{
   background-color: var(--third-text-color);
+  }
 }
+
 
 .footer .container{
   display: flex;
@@ -138,11 +142,12 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background: var(--bg-color-one);
-}
-.footer-subscribe__email:hover,
-.footer-subscribe__email:focus{
+  &:hover,
+  &:focus{
   outline: none;
+  }
 }
+
 
 .footer-subscribe__btn{
   display: flex;
@@ -157,18 +162,16 @@
   border: none;
   color: var(--fourth-text-color);
   
-
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-subscribe__btn:hover,
-.footer-subscribe__btn:focus{
+  &:hover,
+  &:focus{
   color: var(--fourth-text-color);
   background-color: var(--bg-color-third);
-  
+  }
 }
+
 .footer-subscribe__btn-icon{
   margin-left: 10px;
   fill: var(--fourth-text-color);

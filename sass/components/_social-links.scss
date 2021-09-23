@@ -1,9 +1,4 @@
 /* .........team icons.....[f][t][id][in]*/
-
-.social-item:not(:last-child){
-  margin-right: 10px;
-}
-
 .social{
   display: flex;
   justify-content: center;
@@ -13,9 +8,16 @@
 .social__item{
   width: 44px;
   height: 44px;
+  &:not(:last-child){
+  margin-right: 10px;
+  }
 }
 .social__icon{
   fill:var(--icons-color);
+  .social__link:hover &,
+  .social__link:focus &{
+  fill: var(--fourth-text-color);
+  } 
 }
 
 .social__link{
@@ -30,13 +32,10 @@
   transition-property: background-color;
   transition-duration:250ms;
   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus{
+  background-color: var(--third-text-color);
+  }
  }
  
-.social__link:hover .social__icon,
-.social__link:focus .social__icon{
-  fill: var(--fourth-text-color);
-} 
-.social__link:hover,
-.social__link:focus{
-  background-color: var(--third-text-color);
-}
+

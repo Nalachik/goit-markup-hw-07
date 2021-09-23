@@ -14,13 +14,11 @@
   align-items: center;
 }
 
-.offer__list:not(:last-child) {
-  margin-right: 30px;
-}
-
 .offer__list{
   width: 270px;
-  
+  &:not(:last-child){
+  margin-right: 30px;
+  }  
 }
 
 .offer__title {
@@ -31,9 +29,9 @@
   text-transform: uppercase;
   color: var(--main-text-color);
 }
+
 .offer__description {
   padding-top: 10px;
-  
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
