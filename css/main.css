@@ -601,28 +601,28 @@ img {
   color: var(--main-text-color);
 }
 
-.clients-list {
+.client-list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.clients-logo {
+.client-list__logo {
   width: 170px;
   height: 92px;
 }
 
-.clients-logo:not(:last-child) {
+.client-list__logo:not(:last-child) {
   margin-right: 30px;
 }
 
-.clients-link {
+.client-list__link {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #AFB1B8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
   cursor: pointer;
   transition-property: border-color;
@@ -630,19 +630,19 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-link:hover, .clients-link:focus {
+.client-list__link:hover, .client-list__link:focus {
   border-color: var(--third-text-color);
 }
 
-.clients-icon {
+.client-list__icon {
   fill: var(--icons-color);
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
+.client-list__link:hover .client-list__icon,
+.client-list__link:focus .client-list__icon {
   fill: var(--third-text-color);
 }
 
@@ -877,10 +877,6 @@ img {
   display: block;
 }
 
-.modal-form__field:focus-within .modal-form__icon {
-  fill: var(--third-text-color);
-}
-
 .modal-form__input {
   width: 100%;
   height: 40px;
@@ -906,6 +902,10 @@ img {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form__field:focus-within .modal-form__icon {
+  fill: var(--third-text-color);
 }
 
 .modal-comment {

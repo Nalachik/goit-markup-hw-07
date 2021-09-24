@@ -2,8 +2,10 @@
   border-bottom: 1px solid #ECECEC;
   }
 
-.header .container{
+.header{
+  .container{
   display: flex;
+  } 
 }  
 
 /* webstudio */
@@ -33,10 +35,11 @@
   padding: 30.5px 0px 30.5px 0px;
 }
 
-.nav-links__item:not(:last-child) {
+.nav-links__item{
+&:not(:last-child) {
   margin-right: 50px;
+  }
 }
-
 .nav-links .link:hover,
 .nav-links .link:focus {
   color: var(--third-text-color);

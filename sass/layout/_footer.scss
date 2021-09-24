@@ -103,10 +103,13 @@
 }
 
 
-.footer .container{
+.footer{
+  .container{
   display: flex;
   align-items: baseline;
-}
+  }
+} 
+
 .footer-address{
   margin-right: 70px;
 }

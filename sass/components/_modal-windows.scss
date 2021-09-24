@@ -103,9 +103,7 @@
   display: block;
   
 }
-.modal-form__field:focus-within .modal-form__icon{
-  fill: var(--third-text-color);
-}
+
 
 .modal-form__input{
   width: 100%;
@@ -135,6 +133,9 @@
   transition-duration: 250ms;
   transition-timing-function:
   cubic-bezier(0.4, 0, 0.2, 1);
+  .modal-form__field:focus-within &{
+  fill: var(--third-text-color);
+  }
 }
 
 .modal-comment{
@@ -207,9 +208,11 @@
   fill:var(--fourth-text-color);
 }
 
-.modal-checkbox__check:checked + .modal-checkbox__label > .modal-checkbox__icon{
+.modal-checkbox__check{
+  &:checked + .modal-checkbox__label > .modal-checkbox__icon{
   background-color: var(--third-text-color);
   border: none;
+  }
 }
 
 .modal__btn-send{
